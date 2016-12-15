@@ -1,0 +1,11 @@
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\DAL.dll.config
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\DAL.dll
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\DAL.pdb
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\EntityFramework.dll
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\EntityFramework.xml
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\obj\Debug\DAL.dll
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\obj\Debug\DAL.pdb
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\bin\Debug\LiteDB.dll
+C:\Users\User\documents\visual studio 2015\Projects\Products\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

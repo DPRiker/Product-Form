@@ -1,0 +1,88 @@
+﻿@model IEnumerable<WebUI.Models.ProductViewModel>
+
+@{
+	ViewBag.Title = "Form";
+}
+
+<h2>Form</h2>
+
+<p>
+	@Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Number)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Name)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Quantity)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Price)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Category)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Image)
+		</th>
+		<th>
+			Image Status
+			</th>
+		<th>
+			Colors
+		</th>
+
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Number)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Name)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Quantity)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Price) €
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Category.Name)
+			</td>
+			<td >
+				@if (item.Image != null)
+				{
+					@Html.Raw("<img style='width:80px; height:60px;' class=\"image\" src=\"data:image/jpeg;base64,"
+								+ Convert.ToBase64String(item.Image) + "\" />")
+
+				}
+			
+			</td>
+			<td>
+				<div>
+					@Html.CheckBox("Enable", new { @class = "Enable" }) Hide Image
+				</div>
+				</td>
+			<td>
+				@Html.RadioButton("color", "red")
+				<span>red</span> <br />
+				@Html.RadioButton("color", "blue")
+				<span>yellow</span> <br />
+				@Html.RadioButton("color", "green", true)
+				<span>green</span>
+				</td>
+			<td>
+				@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+				@Html.ActionLink("Send on Email", "MailSend", new { id = item.Id }) |
+			</td>
+		</tr>
+	}
+
+</table>
